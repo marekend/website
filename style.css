@@ -1,0 +1,120 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(137.42deg, #00d5ff 0%, #d0266f 40%, #b9b500 100%);
+    background-size: 300% 300%; 
+    animation: gradient 20s ease infinite;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+@keyframes gradient 
+{
+	0% 
+    {
+		background-position: 0% 50%;
+	}
+	50% 
+    {
+		background-position: 100% 50%;
+	}
+	100% 
+    {
+		background-position: 0% 50%;
+	}
+}
+
+img
+{
+    display: block;
+    margin: 1rem auto;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif 
+}
+
+.container
+{
+    width: 100%;
+}
+
+.price-row
+{
+    width: 90%;
+    max-width: calc(3 * 250px + 2 * 25px);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 25px;
+    justify-content: center;
+}
+
+.price-col
+{
+    background: #1f283b;
+    padding: 10% 10%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.price-col p
+{
+    font-size: 22px;
+}
+
+.price-col h3
+{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+
+.price-col ul
+{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+    height: 8rem;
+}
+
+.price-col ul li
+{
+    margin: 15px 0;
+}
+
+.price-col ul li::before
+{
+    content: '\2022';
+    color: #e33058;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.price-col button
+{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #e33058;
+    border-radius: 6px;
+    margin-top: auto;
+    cursor: pointer;
+    transition: background 0.5s
+
+}
+
+.price-col button:hover
+{
+    background-color: #e33058;
+}
